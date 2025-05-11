@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lanf="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Ticket Information</title>
+</head>
+<body>
+<h1>Find the Detailed ticket below</h1>
+<table>
+	<tr><td>Ticket Number:	</td><td><p th:text="${ticket.ticketNumber}"></td></tr>
+		
+		<tr><td>Passenger Name:	</td><td><p th:text="${ticket.Name}"></td></tr>
+		
+		<tr><td>Passenger Departure:	</td><td><p th:text="${ticket.Departure}"></td></tr>
+		
+		<tr><td>Passenger Arrival:	</td><td><p th:text="${ticket.arrival}"></td></tr>
+		
+		<tr><td>Passenger Date Of Journey:	</td><td><input type="text" th:field="${ticket.DateOfJourney}"/></td></tr>
+		
+		<tr><td>Passenger Status:	</td><td><p th:text="${ticket.status}"></td></tr>
+		
+		<tr><td>Passenger Cost:	</td><td><input type="text" th:field="${ticket.ticketprice}"/></td></tr>
+		
+		
+		
+		
+		
+</table>
+</body>
+</html>

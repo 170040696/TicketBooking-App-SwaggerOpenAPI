@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Enter ticket Number</title>
+</head>
+<body>
+<h1>Kindly Enter the Ticket Number to get the FIll Ticket Details</h1>
+<form method="GET" th:action="@{/GetTicketInfo}">
+	
+	<table>
+		<tr><td>Ticket Number : </td><td><input type="text" name="ticketNumber"/></td></tr>
+		
+		<tr><td><input type="submit" value="Get Ticket"/></td></tr>
+	</table>
+</form>
+</body>
+</html>
